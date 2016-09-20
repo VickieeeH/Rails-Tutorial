@@ -31,6 +31,6 @@ class StaticPageControllerTest < ActionDispatch::IntegrationTest
   test "should get contact" do
     get root_path
     assert_response :success
-    assert_select "title", "Contact | #{@base_title}"
+    assert_select "title", "#{@base_title}"
   end
 end
